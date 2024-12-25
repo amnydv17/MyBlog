@@ -1,7 +1,7 @@
 import conf from '../conf/conf';
 import { Client, Account, ID } from "appwrite";
 
-// class creation
+//class creation
 export class AuthService {
     client = new Client(); // if we declare here its a wastage of memory 
     account;
@@ -11,7 +11,7 @@ export class AuthService {
             .setEndpoint(conf.appwriteUrl)
             .setProject(conf.appwriteProjectId);
         this.account = new Account(this.client);
-            
+
     }
 
     async createAccount({email, password, name}) {

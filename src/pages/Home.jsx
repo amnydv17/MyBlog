@@ -19,8 +19,8 @@ function Home() {
                 <Container>
                     <div className="flex flex-wrap">
                         <div className="p-2 w-full">
-                            <h1 className="text-2xl font-bold hover:text-gray-500">
-                                Login to Read Posts
+                            <h1 className="text-2xl font-bold hover:text-blue-500">
+                                Welcome To Home Page...Please Create blog.
                             </h1>
                         </div>
                     </div>
@@ -31,6 +31,9 @@ function Home() {
     return (
         <div className='w-full py-8'>
             <Container>
+                <h1 className="text-2xl font-bold hover:text-blue-500">
+                                Welcome To Home Page
+                </h1>
                 <div className='flex flex-wrap'>
                     {posts.map((post) => (
                         <div key={post.$id} className='p-2 w-1/4'>
